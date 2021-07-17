@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/popup"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#4c308f"
+    app:cardCornerRadius="15sp"
+    android:layout_margin="10sp"
+    app:cardMaxElevation="4sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:padding="5sp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:paddingBottom="16sp"
+            android:textSize="17sp"
+            android:text="Change neighborhood"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/tv_location_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:paddingBottom="16sp"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="10sp"
+            android:drawableStart="@drawable/ic_location_on"
+            android:drawablePadding="8sp"
+            android:text="Delhi"
+            android:textColor="@color/lightGreyAnswers"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="16sp"
+            android:layout_marginTop="10sp"
+            android:drawableEnd="@drawable/ic_delete"
+            android:drawablePadding="5sp"
+            android:gravity="center"
+            android:text="Remove"
+            android:textColor="@color/grey"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_location_2"
+            android:layout_width="wrap_content"
+            android:paddingBottom="16sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_location_1"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="8sp"
+            android:drawableStart="@drawable/ic_location_on"
+            android:drawableEnd="@drawable/ic_done"
+            android:drawablePadding="8sp"
+            android:text="Kolkata"
+            android:textColor="@color/lightGreyAnswers"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_location_2"
+            android:layout_marginStart="5sp"
+            android:paddingBottom="10sp"
+            android:layout_marginTop="8sp"
+            android:drawableStart="@drawable/ic_add"
+            android:drawablePadding="8sp"
+            android:text="Add neighborhood"
+            android:textColor="@color/grey"
+            android:textSize="17sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

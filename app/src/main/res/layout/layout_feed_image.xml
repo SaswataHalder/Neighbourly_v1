@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    app:cardCornerRadius="25sp"
+    app:cardMaxElevation="4sp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/cardview_light_background"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_marginBottom="20sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/scene" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="15sp"
+            android:background="@drawable/design_circle"
+            android:padding="3sp"
+            android:src="@drawable/ic_more_vert"
+            app:tint="@android:color/white" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_user"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_below="@+id/image"
+            android:layout_marginStart="8sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dp_person3" />
+
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_marginStart="8sp"
+            android:layout_toEndOf="@+id/iv_user"
+            android:text="Prity \u2022  3 days ago"
+            android:textColor="@color/userName"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_details"
+            android:layout_marginStart="8sp"
+            android:layout_toEndOf="@+id/iv_user"
+            android:drawableStart="@drawable/ic_location_on"
+            android:text="Delhi"
+            android:textColor="@color/userName"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_location"
+            android:layout_marginStart="8sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="10sp"
+            android:layout_toEndOf="@+id/iv_user"
+            android:paddingRight="4sp"
+            android:layout_marginRight="20sp"
+            android:text="Take me to the mountains"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_question"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16sp"
+            android:layout_marginEnd="8sp"
+            android:backgroundTint="@color/grey"
+            android:textSize="12sp"
+            android:text="5 Comments" />
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="wrap_content"
+            android:layout_height="1sp"
+            android:layout_below="@+id/tv_no"
+            android:backgroundTint="@color/grey"
+            android:layout_marginTop="16sp"
+            android:layout_marginBottom="16sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:background="#25000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_line"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:padding="7sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_star"
+                android:drawablePadding="5sp"
+                android:gravity="center|start"
+                android:textSize="12sp"
+                android:padding="8sp"
+                android:text="Save"
+                android:textColor="@color/iconColor1" />
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_thumb_up"
+                android:drawablePadding="5sp"
+                android:gravity="center|start"
+                android:textSize="12sp"
+                android:padding="8sp"
+                android:text="Like"
+                android:textColor="@color/iconColor1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_mode_comment"
+                android:drawablePadding="5sp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:padding="8sp"
+                android:text="Comment"
+                android:textColor="@color/iconColor2" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

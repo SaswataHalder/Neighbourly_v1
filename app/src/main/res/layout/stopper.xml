@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/scroll_stopper"
+        android:layout_width="wrap_content"
+        android:layout_height="1sp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="16sp"
+        android:layout_marginBottom="16sp"
+        android:background="#25000000" />
+
+</LinearLayout>

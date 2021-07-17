@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6340b0</color>
+    <color name="darkPrimary">#43238c</color>
+    <color name="colorAccent">#55d6ba</color>
+
+    <color name="iconColor1">#7984d0</color>
+    <color name="iconColor2">#ff8a65</color>
+    <color name="userName">#c0bdcf</color>
+    <color name="grey">#9493af</color>
+    <color name="lightGreyAnswers">#e9e9ed</color>
+    <color name="iconColor3">@android:color/tab_indicator_text</color>
+</resources>

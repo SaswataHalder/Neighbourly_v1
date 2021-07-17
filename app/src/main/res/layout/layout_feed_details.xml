@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/cardview_light_background"
+    app:cardCornerRadius="25sp"
+    app:cardMaxElevation="4sp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="65sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/post">
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="8sp"
+                    android:padding="8sp"
+                    android:src="@drawable/ic_more_vert" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/iv_user"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_below="@+id/iv_more"
+                    android:layout_marginStart="8sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dp_person1" />
+
+                <TextView
+                    android:id="@+id/tv_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_more"
+                    android:layout_marginStart="8sp"
+                    android:layout_toEndOf="@+id/iv_user"
+                    android:text="Rahul  \u2022  1 day ago"
+                    android:textColor="@color/userName"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_details"
+                    android:layout_marginStart="8sp"
+                    android:layout_toEndOf="@+id/iv_user"
+                    android:drawableStart="@drawable/ic_location_on"
+                    android:text="Kolkata"
+                    android:textColor="@color/userName"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_location"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_toEndOf="@+id/iv_user"
+                    android:paddingRight="4sp"
+                    android:layout_marginRight="20sp"
+                    android:text="I want to have a typical Bengali meal. Where and what should I eat?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tv_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_question"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="16sp"
+                    android:layout_marginEnd="16sp"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/grey"
+                    android:text="1 Answer" />
+
+                <View
+                    android:id="@+id/v_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1sp"
+                    android:layout_below="@+id/tv_no"
+                    android:backgroundTint="@color/grey"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginStart="8sp"
+                    android:layout_marginTop="16sp"
+                    android:layout_marginEnd="8sp"
+                    android:layout_marginBottom="16sp"
+                    android:background="#25000000" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v_line"
+                    android:layout_marginStart="26sp"
+                    android:layout_marginTop="8sp"
+                    android:layout_marginEnd="26sp"
+                    android:layout_marginBottom="8sp"
+                    android:orientation="horizontal"
+                    android:padding="7sp">
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_star"
+                        android:drawablePadding="5sp"
+                        android:gravity="center|start"
+                        android:padding="8sp"
+                        android:textSize="12sp"
+                        android:text="Save"
+                        android:textColor="@color/iconColor1" />
+
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_thumb_up"
+                        android:drawablePadding="5sp"
+                        android:gravity="center|start"
+                        android:textSize="12sp"
+                        android:padding="8sp"
+                        android:text="Like"
+                        android:textColor="@color/iconColor1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/ic_mode_comment"
+                        android:drawablePadding="5sp"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:padding="8sp"
+                        android:text="Answer"
+                        android:textColor="@color/iconColor2" />
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/v_line_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2sp"
+                    android:layout_below="@+id/linear_layout"
+                    android:layout_marginTop="0sp"
+                    android:background="#25000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_below="@+id/post"
+                android:background="@color/lightGreyAnswers">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/iv_user_2"
+                        android:layout_width="50sp"
+                        app:civ_border_color="@color/lightGreyAnswers"
+                        android:layout_height="50sp"
+                        android:layout_margin="8sp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dp_person2" />
+
+                    <TextView
+                        android:id="@+id/tv_details_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="73dp"
+                        android:layout_marginTop="25sp"
+                        android:text="Debasish  \u2022  1 day ago"
+                        android:textColor="@color/grey"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_user_2"
+                        android:layout_marginStart="8sp"
+                        android:layout_marginEnd="15sp"
+                        android:layout_marginRight="20sp"
+                        android:layout_toEndOf="@+id/iv_user_2"
+                        android:justificationMode="inter_word"
+                        android:paddingRight="4sp"
+                        android:text="If you are looking at truly authentic Bengali cuisine, I suggest you try either 6 BALLYGUNGE PLACE or KEWPIES off Heysham Road. If you would like Anglo Indian food, you can try OH CALCUTTA at FORUM MALL, Elgin Road.
+Hope you have an enjoyable gastronomic venture"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_ans"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="10sp"
+                        android:layout_marginBottom="8sp"
+                        android:orientation="horizontal"
+                        android:padding="7sp">
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/ic_reply"
+                            android:drawablePadding="5sp"
+                            android:gravity="center|start"
+                            android:padding="8sp" />
+
+                        <TextView
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:text="1"
+                            android:textSize="15sp"
+                            android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/ic_thumb_up"
+                            android:drawablePadding="5sp"
+                            android:gravity="center|start"
+                            android:padding="8sp"
+                            android:textColor="@color/iconColor1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/ic_more_vert_purple"
+                            android:drawablePadding="5sp"
+                            android:gravity="center"
+                            android:padding="8sp" />
+                    </LinearLayout>
+                    <View
+                        android:id="@+id/v_line_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2sp"
+                        android:layout_below="@+id/linear_answer"
+                        android:layout_marginTop="0sp"
+                        android:background="#25000000" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/answer"
+        android:layout_height="65sp"
+        android:layout_gravity="bottom"
+        android:background="@color/iconColor2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/type_user"
+                app:civ_border_color="@color/iconColor2"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_marginRight="5sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/type_et"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5sp"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:hint="Answer..."
+                android:textColor="@android:color/white"
+                android:textColorHint="#ffdcd1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/type_mic"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="5sp"
+                android:background="@drawable/design_circle_white"
+                android:padding="5sp"
+                android:src="@drawable/ic_mic"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/type_send"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginStart="8sp"
+                android:background="@drawable/design_circle_white"
+                android:padding="5sp"
+                android:src="@drawable/ic_send"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/type_ans"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1sp"
+                android:drawableLeft="@drawable/ic_mode_comment_white"
+                android:drawablePadding="5sp"
+                android:gravity="center"
+                android:text="ANSWER"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

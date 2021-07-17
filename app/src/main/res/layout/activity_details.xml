@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<app.futured.hauler.HaulerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/haulerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:dragDismissFraction="0.15"
+    app:dragDismissScale="0.5"
+    app:fadeSystemBars="true"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/colorPrimary"
+        android:padding="10sp">
+
+        <include layout="@layout/layout_feed_details" />
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</app.futured.hauler.HaulerView>
